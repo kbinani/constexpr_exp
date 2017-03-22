@@ -1,3 +1,5 @@
+#include <type_traits>
+
 //! Implementation of cexpr_exp_less_than_1.
 template <class FloatType, class = std::enable_if<std::is_floating_point<FloatType>::value>>
 FloatType constexpr cexpr_exp_impl(FloatType x, FloatType answer, FloatType xn, FloatType factorial, size_t n)
